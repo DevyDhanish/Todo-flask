@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+html{
+    background-color: #003049;
+}
+
+.main{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.Input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    padding: 50px;
+}
+
+
+#title-input-text{
+    border: solid 3px #f77f00;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #eae2b7;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#submit-btn{
+    border: solid 3px #f77f00;
+    height: 55px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #eae2b7;
+    color: #003049;
+    text-align: center;
+}
+
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    height: 100%;
+    background-color: #f77f00;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.todo-item{
+    background-color: #fcbf49;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+}
+
+.todo-item h4{
+    font-size: larger;
+    color: #003049;
+}
+
+.todo-item a{
+    color: #d62828;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#title-name{
+    font-weight: 200;
+    text-align: left;
+    list-style-type: none;
+}

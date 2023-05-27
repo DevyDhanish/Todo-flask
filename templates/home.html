@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Todo</title>
+    <link rel="stylesheet" href="/staticFiles/home.css">
+</head>
+<body>
+    <div class="main">
+        <div class="App-main">
+            <form class="Input" action="{{ url_for('add')}}" method="post">
+                <input type="text" id="title-input-text" name="title" placeholder="Add a todo">
+                <button id="submit-btn">➕</button>
+            </form>
+            <div class="todo-list">
+                {% for todo in todos%}
+                <div class="todo-item">
+                    <h4>{{todo.title}}</h4>
+                    <a href="/remove/{{todo.id}}">Done ✅</a>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
